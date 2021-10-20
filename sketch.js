@@ -23,8 +23,6 @@ function draw() {
         Tom.velocityX = 0;
         textSize(40);
         text("O GATO SE COLIDIU COM O RATO", 200, 400);
-        Tom.shapeColor("red");
-        Jerry.shapeColor("red");
     }
     //Escreva a condição aqui para avaliar se o gato e o rato colidem
     drawSprites();
