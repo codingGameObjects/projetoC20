@@ -19,12 +19,12 @@ function draw() {
     text("RATO", Jerry.x - 25, Jerry.y - 15)
     text("GATO", Tom.x - 25, Tom.y - 20)
     text("As imagens de gato e rato por augum motivo estavam bugando a colisão", 150, 40)
+     //Escreva a condição aqui para avaliar se o gato e o rato colidem
     if(Tom.x - Jerry.x < Tom.width/2 + Jerry.width/2 && Jerry.x - Tom.x < Jerry.width/2 + Tom.width/2){
         Tom.velocityX = 0;
         textSize(40);
         text("O GATO SE COLIDIU COM O RATO", 200, 400);
     }
-    //Escreva a condição aqui para avaliar se o gato e o rato colidem
     drawSprites();
 }
 
@@ -32,7 +32,7 @@ function draw() {
 function keyPressed(){
 
   //Para mover e alterar a animação, escreva o código aqui
-    if (keyCode === LEFT_ARROW){
+    if (keyCode === LEFT_ARROW && ((Tom.x - Jerry.x < Tom.width/2 + Jerry.width/2 && Jerry.x - Tom.x < Jerry.width/2 + Tom.width/2) == false)){
         Tom.velocityX = -5
     }
 }
