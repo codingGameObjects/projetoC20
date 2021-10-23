@@ -32,7 +32,7 @@ function draw() {
 function keyPressed(){
 
   //Para mover e alterar a animação, escreva o código aqui
-    if (keyCode === LEFT_ARROW && ((Tom.x - Jerry.x < Tom.width/2 + Jerry.width/2 && Jerry.x - Tom.x < Jerry.width/2 + Tom.width/2) == false)){
-        Tom.velocityX = -5
+    if (keyCode === LEFT_ARROW){
+        Tom.velocityX = -5;
     }
 }
